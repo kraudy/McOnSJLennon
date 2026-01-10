@@ -52,6 +52,11 @@ targets:
     params:
       SRCSTMF: APIs/T1.pgm.CLLE
 
+  curlib.QRY.CMD.cmd:
+    params:
+      SRCSTMF: APIs/QRY.CMD.cmd
+      PGM: QRYC
+
   curlib.T2.pgm.CLLE:
     params:
       SRCSTMF: APIs/T2.pgm.CLLE
