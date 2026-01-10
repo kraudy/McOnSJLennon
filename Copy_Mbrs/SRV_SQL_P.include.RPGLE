@@ -1,5 +1,5 @@
 
-**free
+//**free
 // === Prototype for SRV_SQL routines =========================
 dcl-pr SQLProblem ; // Report SQL Problem                    
      pDebugMsg      varchar(200) const;                         
