@@ -16,5 +16,9 @@ targets:
   curlib.SRTUSRSPC.pgm.RPGLE:
     params:
       SRCSTMF: APIs/SRTUSRSPC.pgm.RPGLE
+
+  curlib.CLERRHANDL.pgm.CLLE:
+    params:
+      SRCSTMF: APIs/CLERRHANDL.pgm.CLLE
   
 
