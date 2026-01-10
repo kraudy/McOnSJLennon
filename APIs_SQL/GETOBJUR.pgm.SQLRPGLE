@@ -41,7 +41,9 @@ ctl-opt debug option(*nodebugio: *srcstmt)
     dftactgrp(*no) actgrp(*caller)
     bnddir('UTIL_BND':'SQL_BND')
     main(Main);
-
+//=== Prototypes =====================================================
+/include Copy_Mbrs/SRV_MSG_P.include.RPGLE
+/include Copy_Mbrs/SRV_SQL_P.include.RPGLE
 
 // Gets job type entry for this job.
 // Returns:  JobType has the job type. I=interactive, B=batch, etc.
@@ -49,10 +51,6 @@ dcl-pr GetJobType extpgm('GETJOBTR');
     *n char(26); // JobName26
     *n char(1); // JobType
 end-pr;
-
-//=== Prototypes =====================================================
-/include Copy_Mbrs/SRV_MSG_P.include.RPGLE
-/include Copy_Mbrs/SRV_SQL_P.include.RPGLE
 
 //=== Program Parameters =============================================
 // Input Parameters
