@@ -16,10 +16,12 @@ targets:
   curlib.MOVPGMMSG.CMD.cmd:
     params:
       SRCSTMF: APIs/MOVPGMMSG.CMD.cmd
+      PGM: QMHMOVPM
 
   curlib.RSNESCMSG.CMD.cmd:
     params:
       SRCSTMF: APIs/RSNESCMSG.CMD.cmd
+      PGM: QMHRSNEM
 
   curlib.SRTUSRSPC.pgm.RPGLE:
     params:
