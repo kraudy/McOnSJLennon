@@ -12,5 +12,9 @@ targets:
   curlib.GETOBJUR.pgm.RPGLE:
     params:
       SRCSTMF: APIs/GETOBJUR.pgm.RPGLE
+
+  curlib.SRTUSRSPC.pgm.RPGLE:
+    params:
+      SRCSTMF: APIs/SRTUSRSPC.pgm.RPGLE
   
 
