@@ -15,6 +15,37 @@ targets:
     params:
       SRCSTMF: APIs_SQL/GETOBJUC.pgm.clle
 
+  curib.SRV_STR.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
+
+  curib.SRV_STR.srvpgm.BND:
+    params:
+      EXPORT: All
+      MODULE: SRV_STR
+
+  curib.SRV_MSG.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.module.RPGLE
+
+  curib.SRV_MSG.srvpgm.BND:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.srvpgm.BND
+      MODULE: SRV_MSG
+
+  curib.UTIL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Utilities Service PGMs
+    
+    after:
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_MSG
+
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_STR
+
   curib.GETOBJUR.pgm.SQLRPGLE:
     params:
       SRCSTMF: APIs_SQL/GETOBJUR.pgm.SQLRPGLE
