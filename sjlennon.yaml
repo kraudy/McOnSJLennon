@@ -1,0 +1,12 @@
+
+targets:
+
+  curlib.GETOBJUP.PF.dds:
+    params:
+      SRCSTMF: APIs/GETOBJUP.PF.dds
+
+  curlib.GETJOBTR.pgm.RPGLE:
+    params:
+      SRCSTMF: APIs/GETJOBTR.pgm.RPGLE
+  
+
