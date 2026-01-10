@@ -14,3 +14,7 @@ targets:
   curib.GETOBJUC.pgm.clle:
     params:
       SRCSTMF: APIs_SQL/GETOBJUC.pgm.clle
+
+  curib.GETOBJUR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: APIs_SQL/GETOBJUR.pgm.SQLRPGLE
