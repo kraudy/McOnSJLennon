@@ -13,6 +13,14 @@ targets:
     params:
       SRCSTMF: APIs/GETOBJUR.pgm.RPGLE
 
+  curlib.MOVPGMMSG.CMD.cmd:
+    params:
+      SRCSTMF: APIs/MOVPGMMSG.CMD.cmd
+
+  curlib.RSNESCMSG.CMD.cmd:
+    params:
+      SRCSTMF: APIs/RSNESCMSG.CMD.cmd
+
   curlib.SRTUSRSPC.pgm.RPGLE:
     params:
       SRCSTMF: APIs/SRTUSRSPC.pgm.RPGLE
