@@ -46,6 +46,10 @@ targets:
           BndDir: UTIL_BND
           Obj: SRV_STR
 
+  curib.GETJOBTR.pgm.rpgle:
+    params:
+      SRCSTMF: Service_Pgms/GETJOBTR.pgm.rpgle
+
   curib.GETOBJUR.pgm.SQLRPGLE:
     params:
       SRCSTMF: APIs_SQL/GETOBJUR.pgm.SQLRPGLE
