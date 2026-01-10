@@ -34,5 +34,34 @@ targets:
   curlib.GETOBJUC.pgm.CLLE:
     params:
       SRCSTMF: APIs/GETOBJUC.pgm.CLLE
+
+  curlib.LCKOBJC.pgm.CLLE:
+    params:
+      SRCSTMF: APIs/LCKOBJC.pgm.CLLE
+
+  curlib.T0.pgm.CLLE:
+    params:
+      SRCSTMF: APIs/T0.pgm.CLLE
+
+  curlib.T1.pgm.CLLE:
+    params:
+      SRCSTMF: APIs/T1.pgm.CLLE
+
+  curlib.T2.pgm.CLLE:
+    params:
+      SRCSTMF: APIs/T2.pgm.CLLE
+
+  curlib.T9.pgm.CLP:
+    params:
+      SRCSTMF: APIs/T9.pgm.CLP
+  
+  curlib.T9ALLOC1.pgm.CLLE:
+    params:
+      SRCSTMF: APIs/T9ALLOC1.pgm.CLLE
+  
+  
+  curlib.T9ALLOCMNY.pgm.CLP:
+    params:
+      SRCSTMF: APIs/T9ALLOCMNY.pgm.CLP
   
 
