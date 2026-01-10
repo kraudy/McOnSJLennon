@@ -35,6 +35,11 @@ targets:
     params:
       SRCSTMF: APIs/GETOBJUC.pgm.CLLE
 
+  curlib.GETOBJUSR.CMD.cmd:
+    params:
+      SRCSTMF: APIs/GETOBJUSR.CMD.cmd
+      PGM: GETOBJUC
+
   curlib.LCKOBJC.pgm.CLLE:
     params:
       SRCSTMF: APIs/LCKOBJC.pgm.CLLE
