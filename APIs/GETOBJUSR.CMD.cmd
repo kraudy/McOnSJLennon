@@ -35,7 +35,8 @@
                           a message?')
 
              PARM       KWD(MSGFLD) TYPE(*CHAR) LEN(200) +
-                          RTNVAL(*YES) PMTCTL(RETMSGY) +
+                          /* RTNVAL(*YES)  This gives compilation error*/
+                          PMTCTL(RETMSGY) +
                           PROMPT('Return Message Field')
 
              PARM       KWD(RETFILE) TYPE(*CHAR) LEN(4) RSTD(*YES) +
