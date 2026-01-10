@@ -1,6 +1,16 @@
 
 targets:
 
+  curlib.MOVPGMMSG.CMD.cmd:
+    params:
+      SRCSTMF: APIs/MOVPGMMSG.CMD.cmd
+      PGM: QMHMOVPM
+
+  curlib.RSNESCMSG.CMD.cmd:
+    params:
+      SRCSTMF: APIs/RSNESCMSG.CMD.cmd
+      PGM: QMHRSNEM
+
   curib.GETOBJUC.pgm.clle:
     params:
       SRCSTMF: APIs_SQL/GETOBJUC.pgm.clle
