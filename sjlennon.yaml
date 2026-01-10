@@ -8,5 +8,9 @@ targets:
   curlib.GETJOBTR.pgm.RPGLE:
     params:
       SRCSTMF: APIs/GETJOBTR.pgm.RPGLE
+
+  curlib.GETOBJUR.pgm.RPGLE:
+    params:
+      SRCSTMF: APIs/GETOBJUR.pgm.RPGLE
   
 
