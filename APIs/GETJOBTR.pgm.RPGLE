@@ -25,7 +25,7 @@
 ctl-opt debug option(*nodebugio: *srcstmt)
     dftactgrp(*no) actgrp(*caller)
     main(Main);
-/copy Copy_Mbrs/USPHDR.RPGLE
+/copy Copy_Mbrs/USPHDR.include.RPGLE
 //=== CRTUSRSPC (QUSCTRUS) Parameters ================================
 dcl-s CusName char(20) inz('GETJOBTR  QTEMP');
 dcl-s CusAttr char(10) inz('GETJOBTR  ');
