@@ -44,6 +44,11 @@ targets:
     params:
       SRCSTMF: APIs/LCKOBJC.pgm.CLLE
 
+  curlib.LCKOBJ.CMD.cmd:
+    params:
+      SRCSTMF: APIs/LCKOBJ.CMD.cmd
+      PGM: LCKOBJC  
+
   curlib.T0.pgm.CLLE:
     params:
       SRCSTMF: APIs/T0.pgm.CLLE
