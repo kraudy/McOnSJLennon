@@ -1,5 +1,9 @@
 targets:
 
+  curlib.PRTLNCV.pgm.CLLE:
+    params:
+      SRCSTMF: PRT_CL/PRTLNCV.pgm.CLLE
+
   curlib.PRTLN.CMD.cmd:
     params:
       SRCSTMF: PRT_CL/PRTLN.CMD.cmd
