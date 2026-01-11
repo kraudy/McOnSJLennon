@@ -3,10 +3,11 @@
  -- Or you can run it interactively in iACS Run SQL Scripts
 
  -- 02/2024 Change CustID to char to allow alpha/numeric keys
+DROP TABLE custmast;
 
 -- 02/2024 Change CUSTID to char to allow alpha-numeric key
 
-CREATE OR REPLACE TABLE custmast (
+CREATE TABLE custmast (
     CustID CHAR(4) NOT NULL,
     Name CHAR(40) NOT NULL,
     Addr CHAR(40) NOT NULL,
