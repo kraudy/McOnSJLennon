@@ -1,23 +1,6 @@
 
 targets:
 
-  # Clle with all the msgf messages
-  curlib.CRTMSGF.pgm.CLLE:
-    params:
-      SRCSTMF: 5250_Subfile/CRTMSGF.pgm.CLLE
-
-  curlib.CUSTMSGF.msgf.msgf:
-  
-    params:
-      TEXT: Customer Related Messages
-
-    # Add messages to the msgf
-    success:
-      CALL:
-        PGM: CRTMSGF
-
-    #after:
-    
   curib.SRV_STR.module.RPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
@@ -142,4 +125,25 @@ targets:
     params:
       SRCSTMF: 5250_Subfile/PMTSTATER.pgm.SQLRPGLE
 
+  # Clle with all the msgf messages
+  curlib.CRTMSGF.pgm.CLLE:
+    params:
+      SRCSTMF: 5250_Subfile/CRTMSGF.pgm.CLLE
 
+  curlib.CUSTMSGF.msgf.msgf:
+  
+    params:
+      TEXT: Customer Related Messages
+
+    # Add messages to the msgf
+    success:
+      CALL:
+        PGM: CRTMSGF
+
+  curlib.LOADCUST.pgm.CLLE:
+    params:
+      SRCSTMF: 5250_Subfile/LOADCUST.pgm.CLLE
+
+  curlib.LOADCUST2.pgm.CLLE:
+    params:
+      SRCSTMF: 5250_Subfile/LOADCUST2.pgm.CLLE
