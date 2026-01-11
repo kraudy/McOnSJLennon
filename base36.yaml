@@ -21,3 +21,11 @@ targets:
   curib.BTBR.pgm.SQLRPGLE:
     params:
       SRCSTMF: BASE36/BTBR.pgm.SQLRPGLE
+
+  curib.BTID.DSPF.dds:
+    params:
+      SRCSTMF: BASE36/BTID.DSPF.dds
+
+  curib.BTIR.pgm.RPGLE:
+    params:
+      SRCSTMF: BASE36/BTIR.pgm.RPGLE
