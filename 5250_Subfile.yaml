@@ -63,6 +63,14 @@ targets:
         BndDir: SRV_BASE36
         Obj: SRV_BASE36
 
+  curlib.Custmast.table.sql:
+    params:
+      SRCSTMF: 5250_Subfile/Custmast.table.sql
+
+  curlib.Custmast.index.sql:
+    params:
+      SRCSTMF: 5250_Subfile/Custmast.index.sql
+
   curlib.LOADCUSTR.pgm.SQLRPGLE:
     params:
       SRCSTMF: 5250_Subfile/LOADCUSTR.pgm.SQLRPGLE
