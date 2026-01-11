@@ -1,0 +1,9 @@
+targets:
+  
+  curlib.pgmrefs.table.sql:
+    params:
+      SRCSTMF: PGM_REFS/pgmrefs.table.sql
+  
+  curlib.pgmrefs.procedure.sql:
+    params:
+      SRCSTMF: PGM_REFS/pgmrefs.procedure.sql

@@ -1,0 +1,18 @@
+create or replace  TABLE REFS (
+     DEPTH          integer
+    ,CALLER_LIBRARY VarCHAR(10) NOT NULL
+    ,CALLER_NAME    VarCHAR(10) NOT NULL
+    ,CALLER_TYPE    VarCHAR(10) NOT NULL
+    ,CALLER_TEXT    Varchar(30) NOT NULL
+    ,USES_LIBRARY   VarCHAR(10) NOT NULL
+    ,USES_NAME      VarCHAR(10) NOT NULL
+    ,USES_TYPE      VarCHAR(10) NOT NULL
+    ,CONSTRAINT     refs_pk PRIMARY KEY (
+        CALLER_LIBRARY
+        ,CALLER_NAME
+        ,CALLER_TYPE
+        ,USES_LIBRARY
+        ,USES_NAME
+        ,USES_TYPE
+    )
+);
