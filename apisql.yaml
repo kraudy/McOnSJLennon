@@ -19,10 +19,8 @@ targets:
     params:
       SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
 
-  curib.SRV_STR.srvpgm.BND:
-    params:
-      EXPORT: All
-      MODULE: SRV_STR
+  curib.SRV_STR.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
 
   curib.SRV_MSG.module.RPGLE:
     params:
@@ -69,3 +67,51 @@ targets:
   curib.GETOBJUR.pgm.SQLRPGLE:
     params:
       SRCSTMF: APIs_SQL/GETOBJUR.pgm.SQLRPGLE
+
+  curib.GETOBJUC.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/GETOBJUC.pgm.CLLE
+
+  curib.LCKOBJC.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/LCKOBJC.pgm.CLLE
+
+  curib.LCKOBJCorg.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/LCKOBJCorg.pgm.CLLE
+
+  curib.T0.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T0.pgm.CLLE
+
+  curib.T00.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T00.pgm.CLLE
+
+  curib.T1.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T1.pgm.CLLE
+
+  curib.T2.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T2.pgm.CLLE
+
+  curib.T3.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T3.pgm.CLLE
+
+  curib.T9ALLOC1.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T9ALLOC1.pgm.CLLE
+
+  curib.T9ALLOCMNY.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T9ALLOCMNY.pgm.CLLE
+
+  curib.T9DSPMNY.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T9DSPMNY.pgm.CLLE
+
+  curib.t90.pgm.clle:
+    params:
+      SRCSTMF: APIs_SQL/t90.pgm.clle

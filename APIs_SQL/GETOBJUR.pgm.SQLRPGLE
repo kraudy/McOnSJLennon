@@ -42,6 +42,7 @@ ctl-opt debug option(*nodebugio: *srcstmt)
     bnddir('UTIL_BND':'SQL_BND')
     main(Main);
 //=== Prototypes =====================================================
+// Use copy instead of inlcude for this one
 /copy Copy_Mbrs/SRV_MSG_P.include.RPGLE
 /include Copy_Mbrs/SRV_SQL_P.include.RPGLE
 
