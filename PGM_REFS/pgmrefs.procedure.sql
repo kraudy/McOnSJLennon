@@ -64,7 +64,7 @@ begin
     -- occurred and return.
     if error_msg <> ' ' then
         -- <<<<<< Change this table library >>>>>>>
-        insert into lennonsb.refs values (
+        insert into refs values (
             p_Depth,
             p_INLIB,
             p_inpgm,
@@ -99,7 +99,7 @@ begin
             leave Refs_Loop;
         end if;
         -- <<<<<< Change this table library >>>>>>>
-        insert into lennonsb.refs values (
+        insert into refs values (
              p_Depth
             ,CALLER_LIBRARY
             ,CALLER_NAME   
