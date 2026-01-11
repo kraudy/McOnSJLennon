@@ -88,3 +88,7 @@ targets:
           
     params:
       SRCSTMF: 5250_Subfile/LOADCUSTR.pgm.SQLRPGLE
+
+  curlib.MTNCUSTR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/MTNCUSTR.pgm.SQLRPGLE
