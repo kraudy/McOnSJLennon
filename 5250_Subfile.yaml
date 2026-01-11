@@ -112,3 +112,15 @@ targets:
   curlib.PMTCUSTR.pgm.SQLRPGLE:
     params:
       SRCSTMF: 5250_Subfile/PMTCUSTR.pgm.SQLRPGLE
+
+  curlib.States.table.sql:
+    params:
+      SRCSTMF: 5250_Subfile/States.table.sql
+
+  curlib.PMTSTATED.DSPF.dds:
+    params:
+      SRCSTMF: 5250_Subfile/PMTSTATED.DSPF.dds
+
+  curlib.PMTSTATER.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/PMTSTATER.pgm.SQLRPGLE
