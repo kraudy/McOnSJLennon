@@ -1,4 +1,4 @@
-create or replace  TABLE PGMREFS (
+create TABLE PGMREFS (
      DEPTH          integer
     ,CALLER_LIBRARY VarCHAR(10) NOT NULL
     ,CALLER_NAME    VarCHAR(10) NOT NULL
