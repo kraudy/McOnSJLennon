@@ -77,7 +77,7 @@ targets:
   
   curib.SRV_RAND.srvpgm.BND:
     params:
-      Module: Rand_Int
+      Module: SRV_RANDOM
   # Use defaults: Export: All
 
   curlib.LOADCUSTR.pgm.SQLRPGLE:
