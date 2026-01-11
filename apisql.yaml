@@ -85,6 +85,11 @@ targets:
     params:
       SRCSTMF: APIs_SQL/LCKOBJCorg.pgm.CLLE
 
+  curlib.QRY.CMD.cmd:
+    params:
+      SRCSTMF: APIs/QRY.CMD.cmd
+      PGM: QRYC
+
   curib.T0.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T0.pgm.CLLE
