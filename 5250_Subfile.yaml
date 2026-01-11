@@ -124,3 +124,20 @@ targets:
   curlib.PMTSTATER.pgm.SQLRPGLE:
     params:
       SRCSTMF: 5250_Subfile/PMTSTATER.pgm.SQLRPGLE
+
+  # Clle with all the msgf messages
+  curlib.CRTMSGF.pgm.CLLE:
+    params:
+      SRCSTMF: 5250_Subfile/CRTMSGF.pgm.CLLE
+
+  curlib.CUSTMSGF.msgf.msgf:
+  
+    params:
+      TEXT: Customer Related Messages
+
+    # Add messages to the msgf
+    success:
+      CALL:
+        PGM: CRTMSGF
+
+    #after:
