@@ -1,0 +1,68 @@
+
+targets:
+
+  curib.SRV_STR.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
+
+  curib.SRV_STR.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curib.SRV_MSG.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.module.RPGLE
+
+  curib.SRV_MSG.srvpgm.BND:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.srvpgm.BND
+      MODULE: SRV_MSG
+
+  curib.UTIL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Utilities Service PGMs
+    
+    after:
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_MSG
+
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_STR
+
+  curib.SRV_SQL.module.SQLRPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
+
+  curib.SRV_SQL.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curib.SQL_BND.bnddir.bnddir:
+    params: 
+      TEXT: prodcedure relating to processing embedded SQL
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SQL_BND
+        Obj: SRV_SQL
+  
+  curib.SRV_BASE36.module.RPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/SRV_BASE36.module.RPGLE
+
+  curib.SRV_BASE36.srvpgm.BND: 
+    TEXT: BASE36 Service Pgm
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curib.SRV_BASE36.bnddir.bnddir:
+    params: 
+      TEXT: BASE36 ADD Service PGMs
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SRV_BASE36
+        Obj: SRV_BASE36
+
+  curlib.LOADCUSTR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/LOADCUSTR.pgm.SQLRPGLE
