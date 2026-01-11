@@ -54,6 +54,21 @@ targets:
     params:
       SRCSTMF: DATEADJ/T1C.pgm.CLLE
 
+  curlib.MYPRT.prtf.dds:
+    params:
+      DEVTYPE: SCS
+      PAGESIZE: 66 133
+      LPI: 6
+      CPI: 10
+      OVRFLW: 60 
+      CTLCHAR: FCFC
+      CHLVAL: (1 (6))
+      FONT: CPI
+
+  curlib.PRT.pgm.RPGLE:
+    params:
+      SRCSTMF: PRT_CL/PRT.pgm.RPGLE
+
   curlib.T1R.pgm.RPGLE:
     params:
       SRCSTMF: DATEADJ/T1R.pgm.RPGLE
