@@ -13,9 +13,9 @@ targets:
       HLPPNLGRP: DATEADJP
       HLPID: CMD
   
-  curlib.DATEADJC.cmd.CLLE:
+  curlib.DATEADJC.pgm.CLLE:
     params:
-      SRCSTMF: DATEADJ/DATEADJC.cmd.CLLE
+      SRCSTMF: DATEADJ/DATEADJC.pgm.CLLE
   
   curlib.SRV_STR.module.RPGLE:
     params:
@@ -45,7 +45,7 @@ targets:
       - AddBndDirE:   # Add srvpgms to bnddir
           BndDir: UTIL_BND
           Obj: SRV_STR
-          
+
   curlib.DATEADJR.pgm.RPGLE:
     params:
       SRCSTMF: DATEADJ/DATEADJR.pgm.RPGLE
