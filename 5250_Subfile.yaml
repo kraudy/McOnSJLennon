@@ -81,5 +81,10 @@ targets:
   # Use defaults: Export: All
 
   curlib.LOADCUSTR.pgm.SQLRPGLE:
+    before:
+      AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_RAND
+          
     params:
       SRCSTMF: 5250_Subfile/LOADCUSTR.pgm.SQLRPGLE
