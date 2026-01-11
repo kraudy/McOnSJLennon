@@ -1,15 +1,15 @@
 
 targets:
 
-  curib.SRV_BASE36.module.RPGLE:
+  curlib.SRV_BASE36.module.RPGLE:
     params:
       SRCSTMF: 5250_Subfile/SRV_BASE36.module.RPGLE
       TEXT: BASE36 Service Pgm
 
-  curib.SRV_BASE36.srvpgm.BND: {}
+  curlib.SRV_BASE36.srvpgm.BND: {}
   # Use defaults: Export: All, Module: *SrvPgm
 
-  curib.SRV_BASE36.bnddir.bnddir:
+  curlib.SRV_BASE36.bnddir.bnddir:
     params: 
       TEXT: BASE36 ADD Service PGMs
     
@@ -18,14 +18,14 @@ targets:
         BndDir: SRV_BASE36
         Obj: SRV_BASE36
         
-  curib.BTBR.pgm.SQLRPGLE:
+  curlib.BTBR.pgm.SQLRPGLE:
     params:
       SRCSTMF: BASE36/BTBR.pgm.SQLRPGLE
 
-  curib.BTID.DSPF.dds:
+  curlib.BTID.DSPF.dds:
     params:
       SRCSTMF: BASE36/BTID.DSPF.dds
 
-  curib.BTIR.pgm.RPGLE:
+  curlib.BTIR.pgm.RPGLE:
     params:
       SRCSTMF: BASE36/BTIR.pgm.RPGLE

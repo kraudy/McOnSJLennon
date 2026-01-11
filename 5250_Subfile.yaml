@@ -1,23 +1,23 @@
 
 targets:
 
-  curib.SRV_STR.module.RPGLE:
+  curlib.SRV_STR.module.RPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
 
-  curib.SRV_STR.srvpgm.BND: {}  
+  curlib.SRV_STR.srvpgm.BND: {}  
   # Use defaults: Export: All, Module: *SrvPgm
 
-  curib.SRV_MSG.module.RPGLE:
+  curlib.SRV_MSG.module.RPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_MSG.module.RPGLE
 
-  curib.SRV_MSG.srvpgm.BND:
+  curlib.SRV_MSG.srvpgm.BND:
     params:
       SRCSTMF: Service_Pgms/SRV_MSG.srvpgm.BND
       MODULE: SRV_MSG
 
-  curib.UTIL_BND.bnddir.bnddir:
+  curlib.UTIL_BND.bnddir.bnddir:
     params: 
       TEXT: Utilities Service PGMs
     
@@ -30,14 +30,14 @@ targets:
           BndDir: UTIL_BND
           Obj: SRV_STR
 
-  curib.SRV_SQL.module.SQLRPGLE:
+  curlib.SRV_SQL.module.SQLRPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
 
-  curib.SRV_SQL.srvpgm.BND: {}  
+  curlib.SRV_SQL.srvpgm.BND: {}  
   # Use defaults: Export: All, Module: *SrvPgm
 
-  curib.SQL_BND.bnddir.bnddir:
+  curlib.SQL_BND.bnddir.bnddir:
     params: 
       TEXT: prodcedure relating to processing embedded SQL
     
@@ -46,15 +46,15 @@ targets:
         BndDir: SQL_BND
         Obj: SRV_SQL
   
-  curib.SRV_BASE36.module.RPGLE:
+  curlib.SRV_BASE36.module.RPGLE:
     params:
       SRCSTMF: 5250_Subfile/SRV_BASE36.module.RPGLE
       TEXT: BASE36 Service Pgm
 
-  curib.SRV_BASE36.srvpgm.BND: {}
+  curlib.SRV_BASE36.srvpgm.BND: {}
   # Use defaults: Export: All, Module: *SrvPgm
 
-  curib.SRV_BASE36.bnddir.bnddir:
+  curlib.SRV_BASE36.bnddir.bnddir:
     params: 
       TEXT: BASE36 ADD Service PGMs
     
@@ -83,7 +83,7 @@ targets:
     params:
       SRCSTMF: Service_Pgms/SRV_RANDOM.module.SQLRPGLE
   
-  curib.SRV_RAND.srvpgm.BND:
+  curlib.SRV_RAND.srvpgm.BND:
     params:
       Module: SRV_RANDOM
   # Use defaults: Export: All

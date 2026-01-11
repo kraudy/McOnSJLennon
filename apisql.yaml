@@ -11,27 +11,27 @@ targets:
       SRCSTMF: APIs/RSNESCMSG.CMD.cmd
       PGM: QMHRSNEM
 
-  curib.GETOBJUC.pgm.clle:
+  curlib.GETOBJUC.pgm.clle:
     params:
       SRCSTMF: APIs_SQL/GETOBJUC.pgm.clle
 
-  curib.SRV_STR.module.RPGLE:
+  curlib.SRV_STR.module.RPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
 
-  curib.SRV_STR.srvpgm.BND: {}  
+  curlib.SRV_STR.srvpgm.BND: {}  
   # Use defaults: Export: All, Module: *SrvPgm
 
-  curib.SRV_MSG.module.RPGLE:
+  curlib.SRV_MSG.module.RPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_MSG.module.RPGLE
 
-  curib.SRV_MSG.srvpgm.BND:
+  curlib.SRV_MSG.srvpgm.BND:
     params:
       SRCSTMF: Service_Pgms/SRV_MSG.srvpgm.BND
       MODULE: SRV_MSG
 
-  curib.UTIL_BND.bnddir.bnddir:
+  curlib.UTIL_BND.bnddir.bnddir:
     params: 
       TEXT: Utilities Service PGMs
     
@@ -44,14 +44,14 @@ targets:
           BndDir: UTIL_BND
           Obj: SRV_STR
 
-  curib.SRV_SQL.module.SQLRPGLE:
+  curlib.SRV_SQL.module.SQLRPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
 
-  curib.SRV_SQL.srvpgm.BND: {}  
+  curlib.SRV_SQL.srvpgm.BND: {}  
   # Use defaults: Export: All, Module: *SrvPgm
 
-  curib.SQL_BND.bnddir.bnddir:
+  curlib.SQL_BND.bnddir.bnddir:
     params: 
       TEXT: prodcedure relating to processing embedded SQL
     
@@ -60,15 +60,15 @@ targets:
         BndDir: SQL_BND
         Obj: SRV_SQL
 
-  curib.GETJOBTR.pgm.rpgle:
+  curlib.GETJOBTR.pgm.rpgle:
     params:
       SRCSTMF: Service_Pgms/GETJOBTR.pgm.rpgle
 
-  curib.GETOBJUR.pgm.SQLRPGLE:
+  curlib.GETOBJUR.pgm.SQLRPGLE:
     params:
       SRCSTMF: APIs_SQL/GETOBJUR.pgm.SQLRPGLE
 
-  curib.GETOBJUC.pgm.CLLE:
+  curlib.GETOBJUC.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/GETOBJUC.pgm.CLLE
 
@@ -77,11 +77,11 @@ targets:
       SRCSTMF: APIs_SQL/GETOBJUSR.CMD.cmd
       PGM: GETOBJUC
 
-  curib.LCKOBJC.pgm.CLLE:
+  curlib.LCKOBJC.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/LCKOBJC.pgm.CLLE
 
-  curib.LCKOBJCorg.pgm.CLLE:
+  curlib.LCKOBJCorg.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/LCKOBJCorg.pgm.CLLE
 
@@ -90,38 +90,38 @@ targets:
       SRCSTMF: APIs/QRY.CMD.cmd
       PGM: QRYC
 
-  curib.T0.pgm.CLLE:
+  curlib.T0.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T0.pgm.CLLE
 
-  curib.T00.pgm.CLLE:
+  curlib.T00.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T00.pgm.CLLE
 
-  curib.T1.pgm.CLLE:
+  curlib.T1.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T1.pgm.CLLE
 
-  curib.T2.pgm.CLLE:
+  curlib.T2.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T2.pgm.CLLE
 
-  curib.T3.pgm.CLLE:
+  curlib.T3.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T3.pgm.CLLE
 
-  curib.T9ALLOC1.pgm.CLLE:
+  curlib.T9ALLOC1.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T9ALLOC1.pgm.CLLE
 
-  curib.T9ALLOCMNY.pgm.CLLE:
+  curlib.T9ALLOCMNY.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T9ALLOCMNY.pgm.CLLE
 
-  curib.T9DSPMNY.pgm.CLLE:
+  curlib.T9DSPMNY.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/T9DSPMNY.pgm.CLLE
 
-  curib.t90.pgm.clle:
+  curlib.t90.pgm.clle:
     params:
       SRCSTMF: APIs_SQL/t90.pgm.clle
