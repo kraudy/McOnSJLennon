@@ -71,6 +71,15 @@ targets:
     params:
       SRCSTMF: 5250_Subfile/Custmast.index.sql
 
+  curlib.SRV_RANDOM.module.SQLRPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_RANDOM.module.SQLRPGLE
+  
+  curib.SRV_RAND.srvpgm.BND:
+    params:
+      Module: Rand_Int
+  # Use defaults: Export: All
+
   curlib.LOADCUSTR.pgm.SQLRPGLE:
     params:
       SRCSTMF: 5250_Subfile/LOADCUSTR.pgm.SQLRPGLE
