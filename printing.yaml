@@ -14,3 +14,12 @@ targets:
   curlib.DEMOFCFC.pgm.RPGLE:
     params:
       SRCSTMF: Printing/DEMOFCFC.pgm.RPGLE
+
+  curlib.DEMOPRTCTL.pgm.RPGLE:
+    before:
+      OVRPRTF: 
+        FILE: QPRINT
+        TOFILE: MYPRT
+        
+    params:
+      SRCSTMF: Printing/DEMOPRTCTL.pgm.RPGLE
