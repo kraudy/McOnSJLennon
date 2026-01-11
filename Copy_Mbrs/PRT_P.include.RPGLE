@@ -1,4 +1,5 @@
 
+**FREE
 // Prototype for PRT program
 dcl-pr PRT extpgm('PRT');
     line char(132) const;

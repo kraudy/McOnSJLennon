@@ -3,12 +3,13 @@ ctl-opt DftActGrp(*NO) ActGrp(*new) option(*nodebugio: *srcstmt)
 main(Main);
 ctl-opt BndDir('UTIL_BND');
 
-/COPY Copy_Mbrs/PRT_P.include.RPGLE
 /COPY Copy_Mbrs/SRV_MSG_P.include.RPGLE
-//dcl-pr PRT extpgm('PRT');
-//    line char(132) const;
-//    ctl  char(10) const options(*nopass);
-//end-pr;
+// This gives compilation error
+//COPY Copy_Mbrs/PRT_P.include.RPGLE
+dcl-pr PRT extpgm('PRT');
+    line char(132) const;
+    ctl  char(10) const options(*nopass);
+end-pr;
 
 dcl-proc Main;
 
