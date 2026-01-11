@@ -49,3 +49,20 @@ targets:
   curlib.DATEADJR.pgm.RPGLE:
     params:
       SRCSTMF: DATEADJ/DATEADJR.pgm.RPGLE
+
+  curlib.T1C.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/T1C.pgm.CLLE
+
+  curlib.T1R.pgm.RPGLE:
+    params:
+      SRCSTMF: DATEADJ/T1R.pgm.RPGLE
+
+  curlib.T2C.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/T2C.pgm.CLLE
+
+  curlib.T3C.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/T3C.pgm.CLLE
+
