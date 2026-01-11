@@ -42,7 +42,7 @@ ctl-opt debug option(*nodebugio: *srcstmt)
     bnddir('UTIL_BND':'SQL_BND')
     main(Main);
 //=== Prototypes =====================================================
-/include Copy_Mbrs/SRV_MSG_P.include.RPGLE
+/copy Copy_Mbrs/SRV_MSG_P.include.RPGLE
 /include Copy_Mbrs/SRV_SQL_P.include.RPGLE
 
 //dcl-pr SQLProblem; // Report SQL Problem                    
