@@ -20,7 +20,13 @@
 ctl-opt option(*srcstmt: *nodebugio)
     bnddir('SQL_BND')
     actgrp(*new) main(Main);
-/COPY Copy_Mbrs/PRT_P.include.RPGLE
+// This copy produces compilation error in every source it is used.
+//COPY Copy_Mbrs/PRT_P.include.RPGLE
+dcl-pr PRT extpgm('PRT');
+    line char(132) const;
+    ctl  char(10) const options(*nopass);
+end-pr;
+
 /COPY Copy_Mbrs/SRV_SQL_P.include.RPGLE
 
 dcl-proc Main;
