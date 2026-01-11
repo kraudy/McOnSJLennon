@@ -1,0 +1,1 @@
+create index custmast_city on custmast(city);

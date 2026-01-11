@@ -67,9 +67,17 @@ targets:
     params:
       SRCSTMF: 5250_Subfile/Custmast.table.sql
 
-  curlib.Custmast.index.sql:
+  curlib.custmast_name.index.sql:
     params:
-      SRCSTMF: 5250_Subfile/Custmast.index.sql
+      SRCSTMF: 5250_Subfile/custmast_name.index.sql
+
+  curlib.custmast_state.index.sql:
+    params:
+      SRCSTMF: 5250_Subfile/custmast_state.index.sql
+
+  curlib.custmast_city.index.sql:
+    params:
+      SRCSTMF: 5250_Subfile/custmast_city.index.sql
 
   curlib.SRV_RANDOM.module.SQLRPGLE:
     params:
