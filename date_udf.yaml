@@ -1,6 +1,11 @@
 
 targets:
   
+  # Used by the functions.
+  curlib.DATE.module.SQLRPGLE:
+    params:
+      SRCSTMF: DATE_UDF/DATE.module.SQLRPGLE
+  
   curlib.DATE_CYMD.function.SQL:
     params:
       SRCSTMF: DATE_UDF/DATE_CYMD.function.SQL
