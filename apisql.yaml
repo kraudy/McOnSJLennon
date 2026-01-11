@@ -72,6 +72,11 @@ targets:
     params:
       SRCSTMF: APIs_SQL/GETOBJUC.pgm.CLLE
 
+  curlib.GETOBJUSR.CMD.cmd:
+    params:
+      SRCSTMF: APIs_SQL/GETOBJUSR.CMD.cmd
+      PGM: GETOBJUC
+
   curib.LCKOBJC.pgm.CLLE:
     params:
       SRCSTMF: APIs_SQL/LCKOBJC.pgm.CLLE
