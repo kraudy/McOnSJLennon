@@ -1,0 +1,17 @@
+targets:
+  
+  curlib.GRP.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP.pgm.CLP
+  
+  curlib.GRP_ATN.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP_ATN.pgm.CLP
+  
+  curlib.GRP_INIT.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP_INIT.pgm.CLP
+  
+  curlib.GRP_LIBL.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP_LIBL.pgm.CLP
