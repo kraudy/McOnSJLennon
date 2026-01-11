@@ -1,0 +1,14 @@
+
+targets:
+  
+  curlib.DATE_CYMD.function.SQL:
+    params:
+      SRCSTMF: DATE_UDF/DATE_CYMD.function.SQL
+  
+  curlib.DATE_MDY.function.SQL:
+    params:
+      SRCSTMF: DATE_UDF/DATE_MDY.function.SQL
+  
+  curlib.DATE_YMD.function.SQL:
+    params:
+      SRCSTMF: DATE_UDF/DATE_YMD.function.SQL
