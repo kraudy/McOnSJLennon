@@ -1,0 +1,16 @@
+targets:
+
+  curlib.MYPRT.prtf.dds:
+    params:
+      DEVTYPE: SCS
+      PAGESIZE: 66 133
+      LPI: 6
+      CPI: 10
+      OVRFLW: 60 
+      CTLCHAR: FCFC
+      CHLVAL: (1 (6))
+      FONT: CPI
+
+  curlib.DEMOFCFC.pgm.RPGLE:
+    params:
+      SRCSTMF: Printing/DEMOFCFC.pgm.RPGLE
