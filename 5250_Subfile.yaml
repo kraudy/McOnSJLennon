@@ -104,3 +104,11 @@ targets:
   curlib.MTNCUSTR.pgm.SQLRPGLE:
     params:
       SRCSTMF: 5250_Subfile/MTNCUSTR.pgm.SQLRPGLE
+
+  curlib.PMTCUSTD.DSPF.dds:
+    params:
+      SRCSTMF: 5250_Subfile/PMTCUSTD.DSPF.dds
+
+  curlib.PMTCUSTR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/PMTCUSTR.pgm.SQLRPGLE
