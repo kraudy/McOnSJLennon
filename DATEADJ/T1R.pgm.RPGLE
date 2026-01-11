@@ -2,8 +2,9 @@
 ctl-opt DftActGrp(*NO) ActGrp(*new) option(*nodebugio: *srcstmt)
 main(Main);
 ctl-opt BndDir('UTIL_BND');
-/COPY ../Copy_Mbrs/SRV_MSG_P.include.RPGLE
-/COPY ../Copy_Mbrs/PRT_P.include.RPGLE
+
+/COPY Copy_Mbrs/SRV_MSG_P.include.RPGLE
+/COPY Copy_Mbrs/PRT_P.include.RPGLE
 
 dcl-proc Main;
 
