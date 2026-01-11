@@ -1,0 +1,33 @@
+targets:
+  
+  curlib.DEMO_CL1.pgm.CLLE:
+    params:
+      SRCSTMF: PRT_CL/DEMO_CL1.pgm.CLLE
+  
+  curlib.DEMO_CL2.pgm.CLP:
+    params:
+      SRCSTMF: PRT_CL/DEMO_CL2.pgm.CLP
+  
+  curlib.DEMO_CL3.pgm.CLLE:
+    params:
+      SRCSTMF: PRT_CL/DEMO_CL3.pgm.CLLE
+  
+  curlib.SRV_SQL.module.SQLRPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
+
+  curlib.SRV_SQL.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SQL_BND.bnddir.bnddir:
+    params: 
+      TEXT: prodcedure relating to processing embedded SQL
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SQL_BND
+        Obj: SRV_SQL
+        
+  curlib.DEMO_RPG1.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: PRT_CL/DEMO_RPG1.pgm.SQLRPGLE
