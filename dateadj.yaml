@@ -1,0 +1,14 @@
+
+targets:
+
+  curlib.DATEADJ.CMD.cmd:
+    params:
+      SRCSTMF: DATEADJ/DATEADJ.CMD.cmd
+      PGM: DATEADJR
+      ALLOW:
+        - IPGM 
+        - BPGM 
+        - IMOD 
+        - IPGM
+      HLPPNLGRP: DATEADJP
+      HLPID: CMD
