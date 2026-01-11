@@ -1,4 +1,18 @@
 targets:
+
+  curlib.PRTLN.CMD.cmd:
+    params:
+      SRCSTMF: PRT_CL/PRTLN.CMD.cmd
+      PGM: PRTLNC
+      VLDCKR: PRTLNCV
+      ALLOW:
+        - IPGM 
+        - BPGM 
+        - IMOD 
+        - IPGM
+        - INTERACT
+      HLPPNLGRP: PRTLNP
+      HLPID: CMD
   
   curlib.DEMO_CL1.pgm.CLLE:
     params:
@@ -27,7 +41,7 @@ targets:
       AddBndDirE:   # Add srvpgms to bnddir
         BndDir: SQL_BND
         Obj: SRV_SQL
-        
+
   curlib.DEMO_RPG1.pgm.SQLRPGLE:
     params:
       SRCSTMF: PRT_CL/DEMO_RPG1.pgm.SQLRPGLE
