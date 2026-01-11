@@ -89,6 +89,10 @@ targets:
     params:
       SRCSTMF: 5250_Subfile/LOADCUSTR.pgm.SQLRPGLE
 
+  curlib.MTNCUSTD.DSPF.dds:
+    params:
+      SRCSTMF: 5250_Subfile/MTNCUSTD.DSPF.dds
+
   curlib.MTNCUSTR.pgm.SQLRPGLE:
     params:
       SRCSTMF: 5250_Subfile/MTNCUSTR.pgm.SQLRPGLE
