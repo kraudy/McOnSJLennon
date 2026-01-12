@@ -95,6 +95,10 @@ targets:
     params:
       SRCSTMF: 5250_Subfile/Custmast.table.sql
       
+  curlib.MTNCUSTD.DSPF.dds:
+    params:
+      SRCSTMF: USPS_Address/MTNCUSTD.DSPF.dds
+
   curlib.MTNCUSTR.pgm.SQLRPGLE:
     params:
       SRCSTMF: USPS_Address/MTNCUSTR.pgm.SQLRPGLE
