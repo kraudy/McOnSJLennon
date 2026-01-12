@@ -50,7 +50,7 @@ targets:
     params:
       TYPE: CHAR 
       LEN: 20 
-      VALUE: your user id
+      VALUE: "your user id"
 
   curlib.USADRVAL.module.SQLRPGLE:
     params:
