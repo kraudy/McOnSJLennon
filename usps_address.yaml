@@ -1,0 +1,40 @@
+
+targets:
+
+  curlib.SRV_SQL.module.SQLRPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
+
+  curlib.SRV_SQL.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SQL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Address Validation Binding Dir
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SQL_BND
+        Obj: SRV_SQL
+
+  curlib.USPS_ID.dtaara.dtaara:
+    params:
+      TYPE: CHAR 
+      LEN: 20 
+      VALUE: your user id
+
+  curlib.USADRVAL.module.SQLRPGLE:
+    params:
+      SRCSTMF: USPS_Address/USADRVAL.module.SQLRPGLE
+
+  curlib.USADRVAL.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.ADRVAL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Address Validation Binding Dir
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: ADRVAL_BND
+        Obj: USADRVAL
