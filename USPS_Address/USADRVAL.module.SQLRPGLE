@@ -40,7 +40,18 @@ end-pr;
 
 
 //=== Parameter Data Structure Template ==============================
-/copy Copy_Mbrs/USADRVALDS.include.RPGLE
+//copy Copy_Mbrs/USADRVALDS.include.RPGLE
+dcl-ds USAdrValDS template qualified;
+    Address1    char(30);
+    Address2    char(30);
+    City        char(30);
+    State       char(2);
+    Zip5        char(5);
+    Zip4        char(4);
+    Number      int(10);        // Error Number
+    Source      varchar(30);    // Error Source
+    Description varchar(512);   // Error Description
+end-ds;
 
 // === Data area containing your USPS supplied User id. ==============
 // (The USPS supplied USER ID length is not clear, so I made it
