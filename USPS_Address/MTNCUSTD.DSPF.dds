@@ -59,7 +59,7 @@
      A                                      RTNCSRLOC(&SD_PMT_RCD &SD_PMT_FLD)
      A*---------------------------------------------------------------
      A                                  5  1'Customer Id'
-     A            SD_CUSTID      4  0   5 14DSPATR(HI)
+     A            SD_CUSTID      4A  B  5 14DSPATR(HI)
      A                                  5 20'Active Status'
      A            SD_ACTIVE      1   B  5 35
      A N40                                  DSPATR(HI)
