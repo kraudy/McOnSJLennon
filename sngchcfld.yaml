@@ -1,0 +1,9 @@
+targets:
+
+  curlib.Booth.DSPF.dds:
+    params:
+      SRCSTMF: SNGCHCFLD/Booth.DSPF.dds
+
+  curlib.Booth.pgm.RPGLE:
+    params:
+      SRCSTMF: SNGCHCFLD/Booth.pgm.RPGLE
