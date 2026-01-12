@@ -73,3 +73,28 @@ targets:
       AddBndDirE:   # Add srvpgms to bnddir
         BndDir: ADRVAL_BND
         Obj: USADRVAL
+  
+  curlib.SRV_BASE36.module.RPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/SRV_BASE36.module.RPGLE
+      TEXT: BASE36 Service Pgm
+
+  curlib.SRV_BASE36.srvpgm.BND: {}
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SRV_BASE36.bnddir.bnddir:
+    params: 
+      TEXT: BASE36 ADD Service PGMs
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SRV_BASE36
+        Obj: SRV_BASE36
+
+  curlib.Custmast.table.sql:
+    params:
+      SRCSTMF: 5250_Subfile/Custmast.table.sql
+      
+  curlib.MTNCUSTR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: USPS_Address/MTNCUSTR.pgm.SQLRPGLE
