@@ -31,7 +31,13 @@ ctl-opt
     option(*nodebugio: *srcstmt)
 ;
 //=== Prototypes =====================================================
-/copy Copy_Mbrs/SRV_SQL_P.include.RPGLE
+//copy Copy_Mbrs/SRV_SQL_P.include.RPGLE
+// === Prototype for SRV_SQL routines =========================
+dcl-pr SQLProblem; // Report SQL Problem                    
+  pDebugMsg      varchar(200) const;                         
+end-pr;
+// === End of Prototype for SRV_SQL routines ==================
+
 
 //=== Parameter Data Structure Template ==============================
 /copy Copy_Mbrs/USADRVALDS.include.RPGLE
