@@ -79,4 +79,362 @@ targets:
     params:
       SRCSTMF: APIs/T9ALLOCMNY.pgm.CLP
   
+  # apisql spec
 
+  curlib.SRV_STR.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
+
+  curlib.SRV_STR.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SRV_MSG.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.module.RPGLE
+
+  curlib.SRV_MSG.srvpgm.BND:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.srvpgm.BND
+      MODULE: SRV_MSG
+
+  curlib.UTIL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Utilities Service PGMs
+    
+    after:
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_MSG
+
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_STR
+
+  curlib.SRV_SQL.module.SQLRPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
+
+  curlib.SRV_SQL.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SQL_BND.bnddir.bnddir:
+    params: 
+      TEXT: prodcedure relating to processing embedded SQL
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SQL_BND
+        Obj: SRV_SQL
+
+  curlib.GETOBJUR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: APIs_SQL/GETOBJUR.pgm.SQLRPGLE
+
+  curlib.GETOBJUC.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/GETOBJUC.pgm.CLLE
+
+  curlib.GETOBJUSR.CMD.cmd:
+    params:
+      SRCSTMF: APIs_SQL/GETOBJUSR.CMD.cmd
+      PGM: GETOBJUC
+
+  curlib.LCKOBJC.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/LCKOBJC.pgm.CLLE
+
+  curlib.LCKOBJCorg.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/LCKOBJCorg.pgm.CLLE
+
+  curlib.QRY.CMD.cmd:
+    params:
+      SRCSTMF: APIs/QRY.CMD.cmd
+      PGM: QRYC
+
+  curlib.T0.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T0.pgm.CLLE
+
+  curlib.T00.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T00.pgm.CLLE
+
+  curlib.T1.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T1.pgm.CLLE
+
+  curlib.T2.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T2.pgm.CLLE
+
+  curlib.T3.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T3.pgm.CLLE
+
+  curlib.T9ALLOC1.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T9ALLOC1.pgm.CLLE
+
+  curlib.T9ALLOCMNY.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T9ALLOCMNY.pgm.CLLE
+
+  curlib.T9DSPMNY.pgm.CLLE:
+    params:
+      SRCSTMF: APIs_SQL/T9DSPMNY.pgm.CLLE
+
+  curlib.t90.pgm.clle:
+    params:
+      SRCSTMF: APIs_SQL/t90.pgm.clle
+
+  # base36 spec
+
+  curlib.SRV_BASE36.module.RPGLE:
+    params:
+      SRCSTMF: 5250_Subfile/SRV_BASE36.module.RPGLE
+      TEXT: BASE36 Service Pgm
+
+  curlib.SRV_BASE36.srvpgm.BND: {}
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SRV_BASE36.bnddir.bnddir:
+    params: 
+      TEXT: BASE36 ADD Service PGMs
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: SRV_BASE36
+        Obj: SRV_BASE36
+        
+  curlib.BTBR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: BASE36/BTBR.pgm.SQLRPGLE
+
+  curlib.BTID.DSPF.dds:
+    params:
+      SRCSTMF: BASE36/BTID.DSPF.dds
+
+  curlib.BTIR.pgm.RPGLE:
+    params:
+      SRCSTMF: BASE36/BTIR.pgm.RPGLE
+  
+  # date_udf spec
+
+  curlib.DATE.module.SQLRPGLE:
+    params:
+      SRCSTMF: DATE_UDF/DATE.module.SQLRPGLE
+  
+  curlib.DATE_CYMD.function.SQL:
+    params:
+      SRCSTMF: DATE_UDF/DATE_CYMD.function.SQL
+  
+  curlib.DATE_MDY.function.SQL:
+    params:
+      SRCSTMF: DATE_UDF/DATE_MDY.function.SQL
+  
+  curlib.DATE_YMD.function.SQL:
+    params:
+      SRCSTMF: DATE_UDF/DATE_YMD.function.SQL
+  
+  # dateadj spec
+
+  curlib.DATEADJ.CMD.cmd:
+    params:
+      SRCSTMF: DATEADJ/DATEADJ.CMD.cmd
+      PGM: DATEADJR
+      ALLOW:
+        - IPGM 
+        - BPGM 
+        - IMOD 
+        - IPGM
+      HLPPNLGRP: DATEADJP
+      HLPID: CMD
+  
+  curlib.DATEADJC.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/DATEADJC.pgm.CLLE
+
+  curlib.DATEADJR.pgm.RPGLE:
+    params:
+      SRCSTMF: DATEADJ/DATEADJR.pgm.RPGLE
+
+  curlib.T1C.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/T1C.pgm.CLLE
+
+  curlib.MYPRT.prtf.dds:
+    params:
+      DEVTYPE: SCS
+      PAGESIZE: 66 133
+      LPI: 6
+      CPI: 10
+      OVRFLW: 60 
+      CTLCHAR: FCFC
+      CHLVAL: (1 (6))
+      FONT: CPI
+
+  curlib.PRT.pgm.RPGLE:
+    params:
+      SRCSTMF: PRT_CL/PRT.pgm.RPGLE
+
+  curlib.T1R.pgm.RPGLE:
+    params:
+      SRCSTMF: DATEADJ/T1R.pgm.RPGLE
+
+  curlib.T2C.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/T2C.pgm.CLLE
+
+  curlib.T3C.pgm.CLLE:
+    params:
+      SRCSTMF: DATEADJ/T3C.pgm.CLLE
+
+  # grp_job spec
+
+  curlib.GRP.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP.pgm.CLP
+  
+  curlib.GRP_ATN.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP_ATN.pgm.CLP
+  
+  curlib.GRP_INIT.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP_INIT.pgm.CLP
+  
+  curlib.GRP_LIBL.pgm.CLP:
+    params:
+      SRCSTMF: GRP_JOB/GRP_LIBL.pgm.CLP
+
+  # pgm_refs spec
+
+  curlib.pgmrefs.table.sql:
+    params:
+      SRCSTMF: PGM_REFS/pgmrefs.table.sql
+  
+  curlib.pgmrefs.procedure.sql:
+    params:
+      SRCSTMF: PGM_REFS/pgmrefs.procedure.sql
+  
+  # printing spec
+
+  curlib.DEMOFCFC.pgm.RPGLE:
+    params:
+      SRCSTMF: Printing/DEMOFCFC.pgm.RPGLE
+
+  curlib.DEMOPRTCTL.pgm.RPGLE:
+    before:
+      OVRPRTF: 
+        FILE: QPRINT
+        TOFILE: MYPRT
+        
+    params:
+      SRCSTMF: Printing/DEMOPRTCTL.pgm.RPGLE
+
+  # prt_cl spec
+
+  curlib.PRTLNCV.pgm.CLLE:
+    params:
+      SRCSTMF: PRT_CL/PRTLNCV.pgm.CLLE
+
+  curlib.PRTLN.CMD.cmd:
+    params:
+      SRCSTMF: PRT_CL/PRTLN.CMD.cmd
+      PGM: PRTLNC
+      VLDCKR: PRTLNCV
+      ALLOW:
+        - IPGM 
+        - BPGM 
+        - IMOD 
+        - IPGM
+        - INTERACT
+      HLPPNLGRP: PRTLNP
+      HLPID: CMD
+  
+  curlib.DEMO_CL1.pgm.CLLE:
+    params:
+      SRCSTMF: PRT_CL/DEMO_CL1.pgm.CLLE
+  
+  curlib.DEMO_CL2.pgm.CLP:
+    params:
+      SRCSTMF: PRT_CL/DEMO_CL2.pgm.CLP
+  
+  curlib.DEMO_CL3.pgm.CLLE:
+    params:
+      SRCSTMF: PRT_CL/DEMO_CL3.pgm.CLLE
+
+  curlib.DEMO_RPG1.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: PRT_CL/DEMO_RPG1.pgm.SQLRPGLE
+
+  # rcdlckdsp spec
+
+  curlib.RCDLCKBAD.pgm.RPGLE:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKBAD.pgm.RPGLE
+
+  curlib.RCDLCKDEMO.pgm.RPGLE:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKDEMO.pgm.RPGLE
+
+  curlib.RCDLCKDSPD.DSPF.dds:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKDSPD.DSPF.dds
+
+  curlib.RCDLCKDSP.pgm.RPGLE:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKDSP.pgm.RPGLE
+
+  # sngchcfld
+
+  curlib.Booth.DSPF.dds:
+    params:
+      SRCSTMF: SNGCHCFLD/Booth.DSPF.dds
+
+  curlib.Booth.pgm.RPGLE:
+    params:
+      SRCSTMF: SNGCHCFLD/Booth.pgm.RPGLE
+      
+  # usps_address spec
+
+  curlib.USPS_ID.dtaara.dtaara:
+    params:
+      TYPE: CHAR 
+      LEN: 20 
+      VALUE: "your user id"
+
+  curlib.USPS_PWD.dtaara.dtaara:
+    params:
+      TYPE: CHAR 
+      LEN: 20 
+      VALUE: "your user id"
+
+  curlib.USADRVAL.module.SQLRPGLE:
+    params:
+      SRCSTMF: USPS_Address/USADRVAL.module.SQLRPGLE
+
+  curlib.USADRVAL.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.ADRVAL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Address Validation Binding Dir
+    
+    after:
+      AddBndDirE:   # Add srvpgms to bnddir
+        BndDir: ADRVAL_BND
+        Obj: USADRVAL
+
+  curlib.Custmast.table.sql:
+    params:
+      SRCSTMF: 5250_Subfile/Custmast.table.sql
+      
+  curlib.MTNCUSTD.DSPF.dds:
+    params:
+      SRCSTMF: USPS_Address/MTNCUSTD.DSPF.dds
+
+  curlib.MTNCUSTR.pgm.SQLRPGLE:
+    params:
+      SRCSTMF: USPS_Address/MTNCUSTR.pgm.SQLRPGLE
