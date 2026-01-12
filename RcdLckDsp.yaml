@@ -1,0 +1,6 @@
+
+targets:
+
+  curlib.RCDLCKBAD.pgm.RPGLE:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKBAD.pgm.RPGLE
