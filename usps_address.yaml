@@ -52,6 +52,12 @@ targets:
       LEN: 20 
       VALUE: "your user id"
 
+  curlib.USPS_PWD.dtaara.dtaara:
+    params:
+      TYPE: CHAR 
+      LEN: 20 
+      VALUE: "your user id"
+
   curlib.USADRVAL.module.SQLRPGLE:
     params:
       SRCSTMF: USPS_Address/USADRVAL.module.SQLRPGLE
