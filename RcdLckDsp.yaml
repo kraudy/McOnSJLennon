@@ -4,3 +4,15 @@ targets:
   curlib.RCDLCKBAD.pgm.RPGLE:
     params:
       SRCSTMF: RcdLckDsp/RCDLCKBAD.pgm.RPGLE
+
+  curlib.RCDLCKDEMO.pgm.RPGLE:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKDEMO.pgm.RPGLE
+
+  curlib.RCDLCKDSPD.DSPF.dds:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKDSPD.DSPF.dds
+
+  curlib.RCDLCKDSP.pgm.RPGLE:
+    params:
+      SRCSTMF: RcdLckDsp/RCDLCKDSP.pgm.RPGLE
