@@ -49,6 +49,11 @@ targets:
       SRCSTMF: APIs/LCKOBJ.CMD.cmd
       PGM: LCKOBJC  
 
+  curlib.QRY.CMD.cmd:
+    params:
+      SRCSTMF: APIs/QRY.CMD.cmd
+      PGM: QRYC
+
   curlib.T0.pgm.CLLE:
     params:
       SRCSTMF: APIs/T0.pgm.CLLE
@@ -56,11 +61,6 @@ targets:
   curlib.T1.pgm.CLLE:
     params:
       SRCSTMF: APIs/T1.pgm.CLLE
-
-  curlib.QRY.CMD.cmd:
-    params:
-      SRCSTMF: APIs/QRY.CMD.cmd
-      PGM: QRYC
 
   curlib.T2.pgm.CLLE:
     params:
