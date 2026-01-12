@@ -1,6 +1,35 @@
 
 targets:
 
+  curlib.SRV_STR.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_STR.module.RPGLE
+
+  curlib.SRV_STR.srvpgm.BND: {}  
+  # Use defaults: Export: All, Module: *SrvPgm
+
+  curlib.SRV_MSG.module.RPGLE:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.module.RPGLE
+
+  curlib.SRV_MSG.srvpgm.BND:
+    params:
+      SRCSTMF: Service_Pgms/SRV_MSG.srvpgm.BND
+      MODULE: SRV_MSG
+
+  curlib.UTIL_BND.bnddir.bnddir:
+    params: 
+      TEXT: Utilities Service PGMs
+    
+    after:
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_MSG
+
+      - AddBndDirE:   # Add srvpgms to bnddir
+          BndDir: UTIL_BND
+          Obj: SRV_STR
+          
   curlib.SRV_SQL.module.SQLRPGLE:
     params:
       SRCSTMF: Service_Pgms/SRV_SQL.module.SQLRPGLE
